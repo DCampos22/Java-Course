@@ -1,0 +1,33 @@
+import javax.swing.*;  
+public class Project0 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String inputSentence;
+		inputSentence = JOptionPane.showInputDialog(null, "Enter a sentence:"); 
+		// the first null means using the default frame.
+		
+	while(!inputSentence.equalsIgnoreCase("STOP")) {
+		int lowerCase = 0;
+		int upperCase = 0;
+		for(int i = 0; i <=inputSentence.length()-1; i++) {
+			if(inputSentence.charAt(i) == 'e') {
+			lowerCase++;
+			}
+			else if(inputSentence.charAt(i) == 'E') {
+			upperCase++;
+			}
+			
+		}
+		JOptionPane.showMessageDialog(null, "Number of lowerCase e's: " + lowerCase + "\tNumber of upperCase E's: " + upperCase);			
+		inputSentence = JOptionPane.showInputDialog(null, "Enter a sentence:"); // the first null means using the default frame.
+	} 
+	
+
+
+	}
+
+}
+
+
+
